@@ -3,4 +3,4 @@ class TransactionRepository:
         pass
 
     async def get_last_transaction(self):
-        pass
+        return 1631600445
