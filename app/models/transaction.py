@@ -8,7 +8,6 @@ class Transaction(Base):
 
     id = Column(Integer, primary_key=True)
     transaction_hash = Column(String)
-    timestamp = Column(String, nullable=True)
 
     def __repr__(self) -> str:
         return str(f'<Transaction transaction_hash={self.transaction_hash}')

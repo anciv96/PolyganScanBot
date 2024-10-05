@@ -5,11 +5,10 @@ from sqlalchemy.exc import StatementError
 
 def session_start_decorator(func):
     @wraps(func)
-    async def wrapper(*args, **kwargs):
-        self = args[0]
+    async def wrapper(self, *args, **kwargs):
         try:
             async with self.session.begin():
-                return await func(*args, **kwargs)
+                return await func(self, *args, **kwargs)
         except StatementError as e:
             await self.session.rollback()
 

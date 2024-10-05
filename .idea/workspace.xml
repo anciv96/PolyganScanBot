@@ -5,12 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4ef451d-280d-4e9d-9f63-be50209d0b5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/repositories/decorators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/scrapers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/scrapers/base_scraper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/scrapers/polygonscan/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/scrapers/polygonscan/base_strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/scrapers/polygonscan/polygonscan_scraper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/scrapers/polygonscan/strategies/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tests/repositories/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tests/repositories/test_transaction_repository.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/our_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/our_token.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/transaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/transaction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/repositories/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/repositories/decorators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/repositories/transaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/repositories/transaction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/scraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/polygonscan/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/converter/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/polygonscan/polygonscan_scraper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/polygonscan/strategies/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/converter/xlsx_to_sqlite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/polygonscan/strategies/base_strategy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/polygonscan/strategies/transaction_fetch_strategy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/scrapers/polygonscan/strategies/transaction_fetch_strategy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tests/services/test_scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/services/test_polygon_transaction_fetch_strategy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,51 +45,36 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2mtFzNYr8K7rRBM1NWFWHM4epck" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.config.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.scraper.executor": "Run",
-    "Python.transaction.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_polygon_transaction_fetch_strategy.test_fetch_token_transactions.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_transaction_repository.test_update_last_transaction.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.config.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.scraper.executor&quot;: &quot;Run&quot;,
+    &quot;Python.transaction.executor&quot;: &quot;Run&quot;,
+    &quot;Python.xlsx_to_sqlite.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/services/scrapers" />
+      <recent name="$PROJECT_DIR$/app/services/polygonscan" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.scraper">
-    <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="polygon_bot" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/config.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.xlsx_to_sqlite">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="polygon_bot" />
       <option name="ENV_FILES" value="" />
@@ -142,11 +141,65 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="xlsx_to_sqlite" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="polygon_bot" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/services/converter" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/services/converter/xlsx_to_sqlite.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_polygon_transaction_fetch_strategy.test_fetch_token_transactions" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="polygon_bot" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/tests/services" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_polygon_transaction_fetch_strategy.test_fetch_token_transactions&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_transaction_repository.test_update_last_transaction" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="polygon_bot" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/tests/repositories" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_transaction_repository.test_update_last_transaction&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.xlsx_to_sqlite" />
+        <item itemvalue="Python tests.Python tests for test_transaction_repository.test_update_last_transaction" />
+        <item itemvalue="Python tests.Python tests for test_polygon_transaction_fetch_strategy.test_fetch_token_transactions" />
         <item itemvalue="Python.scraper" />
         <item itemvalue="Python.transaction" />
-        <item itemvalue="Python.config" />
       </list>
     </recent_temporary>
   </component>
@@ -167,5 +220,37 @@
       <updated>1727888227004</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/services/scrapers/polygonscan/strategies/transaction_fetch_strategy.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/services/scrapers/polygonscan/strategies/transaction_fetch_strategy.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/services/scrapers/polygonscan/strategies/transaction_fetch_strategy.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
