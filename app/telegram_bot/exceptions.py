@@ -1,0 +1,2 @@
+class WrongFileTypeError(TypeError):
+    pass

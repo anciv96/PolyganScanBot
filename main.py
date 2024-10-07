@@ -1,12 +1,14 @@
 import asyncio
 
-from app.models.database import engine, Base, async_session
-from app.repositories.transaction import TransactionRepository
-from app.config import TOKENS
-from app.services.scrapers.polygonscan.polygonscan_scraper import PolygonScanScraper
-from app.services.scrapers.polygonscan.strategies.transaction_fetch_strategy import TransactionFetchStrategy
-from app.models.transaction import Transaction
-from app.models.our_token import OurToken
+from app import logger_setup
+from app.business_logic.models.database import engine, Base
+from app.business_logic.scheduler import schedule_tasks
+from app.dispatcher import bot, scheduler
+
+from app.telegram_bot.handlers.update_wallets_command.update_wallets_handler import dp
+
+
+logger = logger_setup.get_logger(__name__)
 
 
 async def init_db() -> None:
@@ -14,17 +16,22 @@ async def init_db() -> None:
         await connection.run_sync(Base.metadata.create_all)
 
 
+async def schedule_tasks_wrapper():
+    try:
+        logger.info('Starting schedule task')
+        await schedule_tasks()
+        scheduler.start()
+
+    except Exception as error:
+        logger.critical(f"Ошибка при запуске расписания задач: {error}")
+
+
 async def main():
     await init_db()
-    async with async_session() as session:
-        repository = TransactionRepository(session)
-        transaction_strategy = TransactionFetchStrategy()
-        transaction_scraper = PolygonScanScraper(TOKENS, repository, transaction_strategy)
-        transactions = await transaction_scraper.execute()
-
-        for i, transaction in enumerate(transactions):
-            print(i, transaction)
+    await schedule_tasks_wrapper()
+    await dp.start_polling(bot)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     asyncio.run(main())
+
