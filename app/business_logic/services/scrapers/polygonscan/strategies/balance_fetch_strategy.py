@@ -1,6 +1,3 @@
-
-from typing import Any
-
 import aiohttp
 
 from app.business_logic.services.scrapers.polygonscan.polygonscan_scraper import PolygonScanScraper

@@ -5,59 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4ef451d-280d-4e9d-9f63-be50209d0b5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/business_logic/services/files_manager/our_addresses_reader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/business_logic/services/scrapers/polygonscan/strategies/balance_fetch_strategy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/logger_setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/telegram_bot/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/telegram_bot/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/telegram_bot/handlers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/telegram_bot/handlers/new_transactions_notifier/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/telegram_bot/handlers/new_transactions_notifier/message_text.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/telegram_bot/handlers/new_transactions_notifier/transaction_fetch_notifier.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/telegram_bot/handlers/update_wallets_command/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/telegram_bot/handlers/update_wallets_command/handle_document.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/telegram_bot/handlers/update_wallets_command/update_wallets_handler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/telegram_bot/states/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/telegram_bot/states/update_wallets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tests/business_logic/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tests/business_logic/repositories/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tests/business_logic/services/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tests/business_logic/services/files_manager/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tests/business_logic/services/files_manager/test_our_adresses_reader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tests/business_logic/services/scrapers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tests/telegram_bot/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tests/telegram_bot/handlers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tests/telegram_bot/handlers/test_handle_document.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/telegram_bot/handlers/help.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/telegram_bot/handlers/status.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/polygon_bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/polygon_bot.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/business_logic/scheduler.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/business_logic/scheduler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/business_logic/services/scrapers/polygonscan/strategies/transaction_fetch_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/business_logic/services/scrapers/polygonscan/strategies/transaction_fetch_strategy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dispatcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dispatcher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/handlers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/business_logic/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/handlers/update_wallets.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/business_logic/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/business_logic/models/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/our_token.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/transaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/business_logic/models/transaction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/repositories/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/business_logic/repositories/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/repositories/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/business_logic/repositories/decorators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/repositories/our_token.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/repositories/transaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/business_logic/repositories/transaction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/business_logic/scheduler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/converter/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/business_logic/services/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/converter/xlsx_to_sqlite.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/scrapers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/business_logic/services/files_manager/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/scrapers/base_scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/business_logic/services/scrapers/base_scraper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/scrapers/polygonscan/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/business_logic/services/files_manager/file_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/scrapers/polygonscan/base_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/business_logic/services/scrapers/polygonscan/base_strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/scrapers/polygonscan/polygonscan_scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/business_logic/services/scrapers/polygonscan/polygonscan_scraper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/scrapers/polygonscan/strategies/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/business_logic/services/scrapers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/scrapers/polygonscan/strategies/transaction_fetch_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/business_logic/services/scrapers/polygonscan/strategies/transaction_fetch_strategy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tests/repositories/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/business_logic/services/scrapers/polygonscan/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tests/repositories/test_transaction_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/business_logic/repositories/test_transaction_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tests/services/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/business_logic/services/scrapers/polygonscan/strategies/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tests/services/test_polygon_transaction_fetch_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/business_logic/services/scrapers/test_polygon_transaction_fetch_strategy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/telegram_bot/handlers/new_transactions_notifier/transaction_fetch_notifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/telegram_bot/handlers/new_transactions_notifier/transaction_fetch_notifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/telegram_bot/handlers/update_wallets_command/update_wallets_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/telegram_bot/handlers/update_wallets_command/update_wallets_handler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,24 +47,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_polygon_transaction_fetch_strategy.test_fetch_token_transactions.executor": "Run",
-    "Python tests.Python tests for test_transaction_repository.test_update_last_transaction.executor": "Debug",
-    "Python tests.Python tests in test_our_adresses_reader.py.executor": "Debug",
-    "Python.config.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.our_addresses_reader.executor": "Run",
-    "Python.our_token.executor": "Run",
-    "Python.scraper.executor": "Run",
-    "Python.transaction.executor": "Run",
-    "Python.xlsx_to_sqlite (1).executor": "Run",
-    "Python.xlsx_to_sqlite.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_polygon_transaction_fetch_strategy.test_fetch_token_transactions.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_transaction_repository.test_update_last_transaction.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests in test_our_adresses_reader.py.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.config.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.our_addresses_reader.executor&quot;: &quot;Run&quot;,
+    &quot;Python.our_token.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scraper.executor&quot;: &quot;Run&quot;,
+    &quot;Python.transaction.executor&quot;: &quot;Run&quot;,
+    &quot;Python.xlsx_to_sqlite (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.xlsx_to_sqlite.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/tests/business_logic" />

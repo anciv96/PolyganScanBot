@@ -6,7 +6,6 @@ from aiogram.types import Message
 from app import logger_setup
 from app.dispatcher import dp
 from app.telegram_bot.exceptions import WrongFileTypeError
-from app.telegram_bot.handlers.new_transactions_notifier.transaction_fetch_notifier import notify
 from app.telegram_bot.handlers.update_wallets_command.handle_document import handle_document
 from app.telegram_bot.states.update_wallets import UpdateWallets
 

@@ -1,3 +1,4 @@
+import asyncio
 from typing import Any
 
 import aiohttp
@@ -44,6 +45,7 @@ class TransactionFetchStrategy(PolygonScanStrategy):
             return transactions
         except Exception as error:
             logger.error(error)
+            return []
 
     async def _fetch_token_transactions(self, token: str, page: int = 1) -> list[dict[str, Any]]:
         """Loads transactions for a specific token, taking into account filtering."""
@@ -78,13 +80,14 @@ class TransactionFetchStrategy(PolygonScanStrategy):
             "startblock": 0,
             "endblock": 99999999,
             "page": page,
-            "offset": 10,
+            "offset": 20,
             "sort": "desc",
             "apikey": POLYGON_SCAN_KEY,
         }
         try:
             async with session.get(PolygonScanScraper.BASE_URL, params=params, ssl=False) as response:
                 logger.info(f'Sending transaction request ({token})...')
+                await asyncio.sleep(1)
                 return await response.json()
         except Exception as error:
             logger.error(error)

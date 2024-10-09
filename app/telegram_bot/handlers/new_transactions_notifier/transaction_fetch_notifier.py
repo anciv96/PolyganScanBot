@@ -26,6 +26,7 @@ async def notify() -> None:
       Returns:
           None
       """
+
     for token in TOKENS:
         transaction_scraper = await _get_transaction_scraper(token)
         transactions = await transaction_scraper.execute()

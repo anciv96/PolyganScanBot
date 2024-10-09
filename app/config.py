@@ -6,5 +6,5 @@ load_dotenv()
 POLYGON_SCAN_KEY = getenv('POLYGON_KEY')
 TOKENS = getenv('ADDRESSES').split(',')
 BOT_TOKEN = getenv("BOT_TOKEN")
-ADMIN_IDS = getenv("BOT_TOKEN").split(',')
+ADMIN_IDS = getenv("ADMIN_IDS").split(',')
 ADDRESSES_FOLDER = 'our_addresses'

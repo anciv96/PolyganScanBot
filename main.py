@@ -6,6 +6,8 @@ from app.business_logic.scheduler import schedule_tasks
 from app.dispatcher import bot, scheduler
 
 from app.telegram_bot.handlers.update_wallets_command.update_wallets_handler import dp
+from app.telegram_bot.handlers.help import dp
+from app.telegram_bot.handlers.status import dp
 
 
 logger = logger_setup.get_logger(__name__)
